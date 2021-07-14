@@ -63,7 +63,7 @@ header nav li a {
     height: 500px;
     width: 100%;
     margin-bottom: 25px;
-    background-image: url("../images/Website\ Banner\ 4.png");
+    background-image: url(../images/Website\ Banner\ 5.png);
     background-position: center;
 }
 /* style about me section */
@@ -88,14 +88,16 @@ header nav li a {
     height: 300px;
     width: 300px;
     float: left;
-    margin: 15px 15px 1px 15px;
+    margin: 15px 15px 0px 15px;
 }
 
-.about-me p, .contact-me a {
-    font-size: 18px;
+.about-me p {
+    font-size: 24px;
     font-family: 'Poppins', sans-serif;
     padding: 10px;
-    margin-top: 5px;
+    word-spacing: 2px;
+    line-height: 30px;
+    margin-top: 10px;
 }
 
 .work-container {
@@ -103,7 +105,7 @@ header nav li a {
     position: relative;
     max-width: 1000px;
     top: 75px;
-    left: 95px;
+    left: 105px;
     border-left: 2px solid #ffffff; 
     padding: 15px;
     margin-bottom: 20px;
@@ -113,7 +115,6 @@ header nav li a {
     /* use flex-wrap: wrap; so that images will move down if they exceed 1000px width limit */
     display: flex;
     flex-wrap: wrap;
-    align-items: center;
 }
 
 .work h2 {
@@ -123,43 +124,46 @@ header nav li a {
     font-size: 32px;
 }
 /* style work images */
-.work .project-1{
-    height: 350px;
-    width: 900px;
-    margin: 25px 25px 25px 10px;
-    padding: 15px;
-    cursor: pointer;
-    background-image: url("https://via.placeholder.com/1000/808080");
-    background-position: center;
+.thumbnail-container-1 {
+    max-height: 380px;
 }
 
-.work figure{
-    height: 125px;
-    width: 440px;
-    margin: 10px 10px 5px 10px;
-    padding: 15px;
+#cocktail-database-thumbnail {
+    height: 380px;
+    width: 900px;
+    margin: 25px, 25px, 0px, 0px;
+    padding: 10px;
     cursor: pointer;
-    background-image: url("https://via.placeholder.com/500/808080");
-    background-position: center;
+}
+
+.thumbnail-container {
+    max-height: 190px;
+}
+
+.work-thumbnails {
+    opacity: 0.7;
+    height: 190px;
+    width: 447px;
+    margin-right: 5px;
+    padding: 10px;
+    cursor: pointer;
+}
+.work-thumbnails:hover {
+    opacity: 1;
 }
 /* style title cards for work images */
 .work h3 {
     position: relative;
     text-align: center;
-    color: #000000;
-    background-color: #ffff;
+    color: #000;
+    background-color: rgb(202, 200, 200);
     font-family: 'Montserrat', sans-serif;
     font-size: 25px;
     word-spacing: 8px;
     padding: 5px;
     height: 70px;
     max-width: 150px;
-    bottom: 75px;
-    left: 10px;
-}
-
-#project-1 {
-    bottom: 95px;
+    bottom: 83px;
     left: 10px;
 }
 /* add padding and margin to contact me section, other styling effects were the same as about me section, so I just added contact me section selectors to about me section stylings */
@@ -178,6 +182,10 @@ header nav li a {
 .contact-me a {
     color:#ffffff;
     text-decoration: underline;
+    font-size: 18px;
+    font-family: 'Poppins', sans-serif;
+    padding: 10px;
+    margin-top: 5px;
 }
 /* style footer */
 footer {
@@ -240,18 +248,18 @@ footer p {
         text-align: center;
         background: #000000;
         color: #fff;
-      }
+    }
       
-      .header-container {
+    .header-container {
           max-width: 100%;
-      }
+    }
 
-      header h1 {
+    header h1 {
           position: relative;
           bottom: 10px;
-      }
+    }
 
-      nav {
+    nav {
         position: absolute;
         display: flex;
         flex-wrap: wrap;
@@ -262,31 +270,40 @@ footer p {
         height: 30px;
         justify-content: flex-end;
         align-items: center;
-      }
+    }
       
-      nav a {        
+    nav a {        
         padding: 14px 20px;
         text-decoration: none;
         text-align: center;
-      }
+    }
 
-      .header-img {
+    .header-img {
           /* set background position to focus on the part of the header image that looked the nicest on a small screen, since screen was no longer wide enough to encompass entire image */
           background-position-x: -400px;
-      }
+    }
 
-      .work-container {
+    
+    .work-container {
         max-width: 750px;
     }
 
-    .work .project-1{
-        height: 250px;
+    .thumbnail-container-1 {
+        max-height: 300px;
+    }
+
+    .thumbnail-container {
+        max-height: 150px;
+    }
+
+    #cocktail-database-thumbnail {
+        height: 300px;
         width: 700px;
     }
 
-    .work figure{
-        height: 125px;
-        width: 340px;
+    .work-thumbnails {
+        height: 150px;
+        width: 347px;
     }
 
 }
@@ -296,25 +313,27 @@ footer p {
         max-width: 700px;
     }
 
-    .work .project-1{
-        height: 200px;
-        width: 650px;
+    .thumbnail-container-1 {
+        max-height: 270px;
     }
 
-    .work figure{
+    .thumbnail-container {
+        max-height: 150px;
+    }
+
+    #cocktail-database-thumbnail{
+        height: 270px;
+        width: 634px;
+    }
+
+    .work-thumbnails{
         width: 315px;
     }
 
     .work h3 {
-        height: 50px;
+        height: 65px;
         max-width: 150px;
-        bottom: 55px;
-    }
-
-    #project-1 {
-        height: 50px;
-        max-width: 150px;
-        bottom: 75px;
+        bottom: 79px;
     }
     
 }
@@ -324,20 +343,18 @@ footer p {
         right: 30px;
     }
     
+}
+
+@media screen and (max-width: 680px) {
     .work-container {
         max-width: 650px;
         left: 10px
     }
 
-    .work .project-1{
-        height: 200px;
-        width: 550px;
+    #cocktail-database-thumbnail {
+        height: 270px;
+        width: 575px;
     }
-
-    .work figure{
-        width: 265px;
-    }
-    
 }
 
 @media screen and (max-width: 600px) {
@@ -345,26 +362,21 @@ footer p {
         padding: 8px;
     }
 
-    .about-me-container {
-        max-width: 340px;
-    }
-
     .about-me img {
-        height: 300px;
-        width: 300px;
-        float: left;
         margin: 10px;
     }
 
     .work-container {
-        max-width: 500px;
+        max-width: 575px;
     }
 
-    .work .project-1{
-        /* had to switch backround image to smaller version so because 1000x1000 print on original became too big when size was reduced */
-        height: 200px;
-        width: 450px;
-        background-image: url("https://via.placeholder.com/500/808080");
+    .thumbnail-container-1 {
+        max-height: 230px;
+    }
+
+    #cocktail-database-thumbnail {
+        height: 230px;
+        width: 500px;
     }
 
     .contact-me a {
@@ -375,6 +387,21 @@ footer p {
     } 
 }
 
+@media screen and (max-width: 540px) {
+    .work-container {
+        max-width: 500px;
+    }
+
+    .thumbnail-container-1 {
+        max-height: 215px;
+    }
+
+    #cocktail-database-thumbnail {
+        height: 215px;
+        width: 450px;
+    }
+}
+
 @media screen and (max-width: 500px) {
     nav{
         justify-content: center;
@@ -383,20 +410,30 @@ footer p {
     nav ul li a {
         font-size: 12px;
     }
+}
+
+@media screen and (max-width: 450px) {
+    header h1 {
+        left: 40px;
+    }
 
     .work-container {
         max-width: 350px;
-        left: 0px;
+        
     }
 
-    .work .project-1{
-        height: 200px;
-        width: 325px;
+    .thumbnail-container-1 {
+        max-height: 150px;
+    }
+
+    #cocktail-database-thumbnail {
+        height: 150px;
+        width: 315px;
     }
 }
 
-@media screen and (max-width: 420px) {
+@media screen and (max-width: 400px) {
     header h1 {
-        left: 20px;
+        left: 25px;
     }
 }
