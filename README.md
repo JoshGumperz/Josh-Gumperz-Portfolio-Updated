@@ -14,11 +14,8 @@ I've included screenshots of what the site looks like as you scroll through. The
 - All images have a descriptive alt attribute
 - Document has a descriptive title
 - Descriptive comments are present in index.html and style.css
-![Screenshot](https://i.imgur.com/T9uzq1x.png)
-![Screenshot](https://i.imgur.com/ZKUP40k.png)
-![Screenshot](https://i.imgur.com/uX3zRxW.png)
-![Screenshot](https://i.imgur.com/jVvVIpc.png)
-
+![Screenshot](https://i.imgur.com/Y2XoSYT.png)
+![Screenshot](https://i.imgur.com/kV0KznI.png)
 
 
 ## Built With
