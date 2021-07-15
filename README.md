@@ -25,7 +25,7 @@ I've included screenshots of what the site looks like as you scroll through. The
 
 ## Deployed Link
 
-* [See Live Site](https://joshgumperz.github.io/Josh-Gumperz-Portfolio/)
+* [See Live Site](https://joshgumperz.github.io/Josh-Gumperz-Portfolio-Updated/)
 
 
 ## Authors
